@@ -26,26 +26,45 @@ The paper had an accuracy rate of 88% and their CNN model had 5 layers, 2 poolin
 
 ## Results:
 - model 1:
+  
   214/214 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 0.2122 - loss: 3.2572
+
 - model 2:
+  
   214/214 ━━━━━━━━━━━━━━━━━━━━ 4s 11ms/step - accuracy: 0.7663 - loss: 0.8719
+  
 - model 3:
+
   214/214 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.0000e+00 - loss: nan
+  
 - model 4:
+
   214/214 ━━━━━━━━━━━━━━━━━━━━ 2s 8ms/step - accuracy: 0.2122 - loss: 3.2633
+  
 - model 5:
+
   214/214 ━━━━━━━━━━━━━━━━━━━━ 2s 9ms/step - accuracy: 0.7930 - loss: 0.7495
+  
 - model 6:
-  214/214 ━━━━━━━━━━━━━━━━━━━━ 3s 13ms/step - accuracy: 0.8025 - loss: 0.8238
+
+  214/214 ━━━━━━━━━━━━━━━━━━━━ 4s 16ms/step - accuracy: 0.8247 - loss: 0.7455
 
 None of my results are better than the paper, however model 6 has 80% accuracy.There doesn't seem to be a big difference between the two optimzers for models 1 and 4, as they had the same accuracy rates. Model 3, however, had vauge results with <nan> loss. I am not sure why that is. 
+
+# How to run the code
+
+Please just run the train.ipynb, the other notebooks are for datamanipulation (unless you want to re-randomize the train-test-validation) 
 
 # References 
 My project is based off of the paper "Arabic Handwriting Recognition Using Convolutional Neural Network" by Najwa Altwajiry and Isra Al-Turaiki in 2020. The paper introduces the Hijja2 dataset, letters writtne by children in Riyadh's schools.
 I followed the tutorial published by Medium and written by Abhishek Anand, (link https://medium.com/analytics-vidhya/image-text-recognition-738a368368f5)
 To solve my bug problems, I used AI and the following links:
+
   https://stackoverflow.com/questions/71984678/unimplementederror-graph-execution-error-running-nn-on-tensorflow
+  
   https://www.tensorflow.org/api_docs/python/tf/keras/Model
+  
   https://discuss.pytorch.org/t/best-way-to-convert-a-list-to-a-tensor/59949
+  
   https://stackoverflow.com/questions/65474081/valueerror-data-cardinality-is-ambiguous-make-sure-all-arrays-contain-the-same
   
